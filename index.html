@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .click{
+            padding-left: 20;
+            align-items: center;
+        }
+    </style>
+            <body bgcolor= "black" text= "gold" alignment ="center">
+            <h1>FACTORIAL CALCULATOR</h1><br>
+            Enter Num: <input id="num" value=0 maxlength=3;>
+            <br>
+           
+            <button class="click" onclick="fac()">Enter</button>
+            <br>
+            
+            &nbsp &nbsp&nbsp &nbspResult=<input id="ans" readonly><br>
+        
+    </body>
+    <script>
+        
+            function fac(){
+            
+            var i, n, fact;
+            fact=1;
+            n=parseInt(document.getElementById("num").value);
+            for(i=1; i<=n; i++)  
+            {
+            fact= fact*i;
+            }  
+            document.getElementById("ans").value= fact;
+            }
+        
+    </script>
+</body>
+</html>
